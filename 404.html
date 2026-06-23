@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>PhotoBlast is now BoothBop</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        background: #f6e7cf;
+        color: #111;
+        font-family: "Oswald", "Arial Narrow", system-ui, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 24px;
+      }
+      .card {
+        max-width: 24rem;
+      }
+      h1 {
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        margin: 0 0 0.5rem;
+      }
+      .bop {
+        color: #e85a1a;
+      }
+      p {
+        font-size: 1.05rem;
+        line-height: 1.5;
+        color: #4b443c;
+        margin: 0.5rem 0 1.5rem;
+      }
+      a.btn {
+        display: inline-block;
+        text-decoration: none;
+        background: #e85a1a;
+        color: #f6e7cf;
+        border: 2px solid #111;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        padding: 0.8rem 1.6rem;
+      }
+      a.btn:active {
+        background: #c84a16;
+        transform: translateY(1px);
+      }
+      small {
+        display: block;
+        margin-top: 1.5rem;
+        color: #a89f92;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 0.7rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>We're now <span class="bop">BoothBop</span></h1>
+      <p>
+        PhotoBlast has a new name and a new home. This old shortcut is retired —
+        tap below to open the latest version, then add it to your home screen.
+      </p>
+      <a class="btn" href="https://boothbop.com">Open BoothBop →</a>
+      <small>boothbop.com</small>
+    </div>
+    <!-- No service worker registration here on purpose: the browser updates the
+         OLD PhotoBlast registration automatically and picks up /photoblast/sw.js
+         (the kill-switch). Registering again would loop. -->
+  </body>
+</html>
